@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>PDF Merger</title>
+</head>
+<body>
+    <div id="nav_container">
+        <nav>
+            <ul>
+                <li>bang-pdfs-merger</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <img src="static/pdflogo.png" alt="">
+        <div id="upload_files">
+            <form action="/merge" method="post" enctype="multipart/form-data">
+                <input type="file" id="myFile" name="pdfs" multiple accept=".pdf">
+                <input id="button" type="submit" style="font-size: 1vw;">
+              </form>
+        </div>
+    </div>
+   <footer>
+    <p>© 2023 bang-pdfs-merger — All Rights Reserved</p>
+   </footer>
+</body>
+</html>
